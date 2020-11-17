@@ -38,5 +38,7 @@ ibus restart
 # Đặt ibus-bamboo làm bộ gõ mặc định
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
+cp -r ./extensions/ ~/.local/share/gnome-shell/extensions/
+
 sudo apt autoremove
 reboot
