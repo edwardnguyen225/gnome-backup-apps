@@ -1,10 +1,10 @@
 #!/bin/bash
 
-sudo gpasswd -a $USER input
-newgrp input
+# sudo gpasswd -a $USER input
+# newgrp input
 sudo apt-get install libinput-tools -y
 sudo apt-get install ruby -y
-sudo gem install fusuma -y
+sudo gem install fusuma
 sudo apt-get install xdotool -y
 gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
 mv ~/backup-scripts/fusuma-config.yml ~/.config/fusuma/config.yml

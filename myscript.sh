@@ -2,7 +2,7 @@
 
 sudo apt-get update && sudo apt-get full-upgrade -y
 
-sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic code plank -y
+sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic code plank gpick -y
 
 # sudo apt install okular -y
 
@@ -31,4 +31,12 @@ flatpak install flathub com.spotify.Client -y
 # fusuma
 # bash ~/backup-scripts/install-fusuma.sh
 
+sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo -y
+sudo apt-get update
+sudo apt-get install ibus-bamboo -y
+ibus restart
+# Đặt ibus-bamboo làm bộ gõ mặc định
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
+
 sudo apt autoremove
+reboot
