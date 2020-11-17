@@ -2,11 +2,11 @@
 
 sudo apt-get update && sudo apt-get full-upgrade -y
 
-sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic code plank gpick -y
+sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic code gpick -y
 
 # sudo apt install okular -y
 
-# sudo apt install timeshift -y
+sudo apt install timeshift -y
 
 sudo apt install tlp tlp-rdw -y && sudo tlp start
 
