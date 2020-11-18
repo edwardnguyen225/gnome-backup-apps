@@ -2,13 +2,13 @@
 
 sudo apt-get update && sudo apt-get full-upgrade -y
 
-sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic code gpick -y
+sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic gpick -y
 
 # sudo apt install okular -y
 
 sudo apt install timeshift -y
 
-sudo apt install tlp tlp-rdw -y && sudo tlp start
+sudo apt install tlp tlp-rdw -y && sudo tlp start && sudo systemctl start tlp
 
 sudo apt install powertop -y && sudo powertop --auto-tune
 
@@ -26,7 +26,11 @@ cd || exit
 sudo apt install fonts-firacode fonts-cantarell -y
 bash ~/backup-scripts/install-source-code-pro.sh
 
+sudo apt install flatpak -y
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 flatpak install flathub com.spotify.Client -y
+flatpak install flathub com.visualstudio.code -y
 
 # fusuma
 # bash ~/backup-scripts/install-fusuma.sh
@@ -35,10 +39,9 @@ sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
 sudo apt-get update
 sudo apt-get install ibus-bamboo -y
 ibus restart
-# Đặt ibus-bamboo làm bộ gõ mặc định
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
-cp -r ./extensions/ ~/.local/share/gnome-shell/extensions/
+#cp -r ./extensions/ ~/.local/share/gnome-shell/extensions/
 
 sudo apt autoremove
 reboot

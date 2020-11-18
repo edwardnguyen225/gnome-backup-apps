@@ -9,7 +9,7 @@ sudo apt-get install xdotool -y
 gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
 mv ~/backup-scripts/fusuma-config.yml ~/.config/fusuma/config.yml
 
-cd ~/Downloads/ || exit
+cd /home/hirito/.config/autostart/ || exit
 FUSUMA_AUTOSTART_FILE="fusuma.desktop"
 touch $FUSUMA_AUTOSTART_FILE
 
