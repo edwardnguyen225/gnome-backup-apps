@@ -31,7 +31,7 @@ flatpak install flathub com.spotify.Client -y
 # fusuma
 # bash ~/backup-scripts/install-fusuma.sh
 
-sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo -y
+sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
 sudo apt-get update
 sudo apt-get install ibus-bamboo -y
 ibus restart
