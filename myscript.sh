@@ -2,7 +2,7 @@
 
 sudo apt-get update && sudo apt-get full-upgrade -y
 
-sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic gpick -y
+sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic gpick code scrcp -y
 
 # sudo apt install okular -y
 
@@ -30,7 +30,7 @@ sudo apt install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 flatpak install flathub com.spotify.Client -y
-flatpak install flathub com.visualstudio.code -y
+
 
 # fusuma
 # bash ~/backup-scripts/install-fusuma.sh
