@@ -4,6 +4,8 @@ sudo apt-get update && sudo apt-get full-upgrade -y
 
 sudo apt install tree vim vlc youtube-dl gnome-tweak-tool gparted synaptic gpick code scrcp -y
 
+sudo apt install python3-pip -y
+
 # sudo apt install okular -y
 
 sudo apt install timeshift -y
