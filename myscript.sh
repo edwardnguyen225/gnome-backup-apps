@@ -13,6 +13,9 @@ sudo apt-get install synaptic -y
 sudo apt-get install gpick -y
 sudo apt-get install code -y
 
+# install kite
+bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
+
 sudo apt-get install python3-pip -y
 
 # sudo apt-get install okular -y
