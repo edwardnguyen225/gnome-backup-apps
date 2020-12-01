@@ -7,9 +7,12 @@ sudo apt-get install ruby -y
 sudo gem install fusuma
 sudo apt-get install xdotool -y
 gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
-cp ~/backup-scripts/fusuma-config.yml ~/.config/fusuma/config.yml
 
-cd /home/hirito/.config/autostart/ || exit
+mkdir -p ~/.config/fusuma
+cp ~/gnome-backup-apps/fusuma-config.yml ~/.config/fusuma/config.yml
+
+mkdir -p ~/.config/autostart/
+cd ~/.config/autostart/ || exit
 FUSUMA_AUTOSTART_FILE="fusuma.desktop"
 touch $FUSUMA_AUTOSTART_FILE
 

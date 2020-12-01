@@ -4,10 +4,10 @@ swipe:
       command: "xdotool key Ctrl+Super+Down"
     down:
       command: "xdotool key Ctrl+Super+Up"
-    # left:
-    #   command: "xdotool key Ctrl+Super+Left"
-    # right:
-    #   command: "xdotool key Ctrl+Super+Right"
+    left:
+      command: "xdotool key alt+Tab"
+    right:
+      command: "xdotool key Shift+alt+Tab"
 
   3:
     left: 
