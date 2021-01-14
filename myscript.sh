@@ -12,6 +12,7 @@ sudo apt-get install gparted -y
 sudo apt-get install synaptic -y
 sudo apt-get install gpick -y
 sudo apt-get install code -y
+sudo apt-get install rename -y
 
 # install kite
 bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
@@ -57,5 +58,11 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 
 
 cp -r ~/gnome-backup-apps/extensions/* ~/.local/share/gnome-shell/extensions/
 
+gsettings set org.gnome.desktop.interface document-font-name 'Cantarell Regular 11'
+gsettings set org.gnome.desktop.interface font-name 'Cantarell Regular 10'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Source Code Pro Regular 11'
+gconftool --set /apps/metacity/general/titlebar_font 'Cantarell Bold 10' --type STRING
+
 sudo apt-get autoremove
 reboot
+
